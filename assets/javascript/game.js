@@ -7,9 +7,9 @@ var call1 = minMaxRandom (19,120);
 
 var totalScore = 0;
 
-$("#totalScore").text(totalScore);
+$("#blah").text(totalScore);
 
-$("#numberToGuess").text(call1);
+$("#numberToGuess").text("Number to guess: " + call1);
 
 var diamond = minMaxRandom (1,12);
 var sapphire = minMaxRandom (1,12);
@@ -28,7 +28,7 @@ function winLoss (counter,call1) {
 	};
 
 	if (counter > call1){
-		alert("you loose");
+		 alert("you loose");
 
 	};
 };
@@ -39,11 +39,11 @@ $("#diamond").on("click", function() {
 	totalScore += diamond;
 
 	
-	$("#totalScore").text(totalScore);
+	$("#blah").text(totalScore);
 
-	alert("Your new score is:" + counter);
+	// alert("Your new score is:" + counter);
 
-	winLoss(counter,call1);
+	winLoss(totalScore,call1);
 	
 
 });
@@ -55,11 +55,11 @@ $("#sapphire").on("click", function() {
 
 	totalScore += sapphire;
 
-	$("#totalScore").text(totalScore);
+	$("#blah").text(totalScore);
 
-	alert("Your new score is:" + counter);
+	// alert("Your new score is:" + counter);
 
-	winLoss(counter,call1);
+	winLoss(totalScore,call1);
 
 });
 
@@ -69,11 +69,11 @@ $("#garnet").on("click", function() {
 
 	totalScore += garnet;
 
-	$("#totalScore").text(totalScore);
+	$("#blah").text(totalScore);
 
-	alert("your new score is:" + counter);
+	// alert("your new score is:" + counter);
 
-	winLoss(counter,call1);
+	winLoss(totalScore,call1);
 	
 
 });
@@ -82,11 +82,11 @@ $("#amethyst").on("click", function() {
 
 	totalScore += garnet;
 
-	$("#totalScore").text(totalScore);
+	$("#blah").text(totalScore);
 
-	alert("your new score is:" + counter);
+	// alert("your new score is:" + counter);
 
-	winLoss(counter,call1);
+	winLoss(totalScore,call1);
 	
 
 });
