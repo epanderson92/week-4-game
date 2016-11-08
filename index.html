@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='UTF-8'>
+  <title>Crystial Game</title>
+  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+</head>
+	<body>
+		<div>
+			<h1>Crystal Collector!</h1>
+		</div>
+
+		<div>
+			<p>you will be given a random number at the start of the game.</p>
+			<br><br>
+
+			<p>There are four crystals below. By clicking in a crystal you will add a specific amount of points to your total score.</p>
+			<br><br>
+
+			<p>You win the game by matching your total score to random number, you loose the game if your total score goes above the random number.</p>
+
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<br><br>
+
+			<p>Each time when the game starts, the game will change the values of each crystals.</p>
+
+		</div>
+
+		<div>
+			<p>wins:</p>
+			<p>losses:</p>
+		</div>
+
+
+		<div class="crystal">
+			<button><img id="diamond" class="crystalImage" src="assets/images/tumblr_inline_nnhe8miids1qmdk1o_400.jpg"></button>
+			
+			<button><img id="sapphire" class="crystalImage" src="assets/images/ceylon_sapphire_7ct.jpg"></button>
+			
+			<button><img id="garnet" class="crystalImage" src="assets/images/garnet1.jpg"></button>
+
+			<button><img id="amethyst" class="crystalImage" src="assets/images/Uruguayan-Amethyst-3-new-640x640.jpg"></button>
+	
+		</div>
+
+
+		<div> 
+			<p id ="numberToGuess"> Your number to be guessed:</p>
+		</div>
+
+		
+
+		<div>
+			<p id="numberToGuess">Your total score is: <span id="blah"> </span></p>
+		</div>
+
+		<div>
+			<p id="totalScore">Total Score: <span id="blah"> </span></p>
+		</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	</body>
+
+</html>
