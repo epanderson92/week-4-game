@@ -7,16 +7,43 @@ var call1 = minMaxRandom (19,120);
 
 var totalScore = 0;
 
-$("#blah").text(totalScore);
-
-$("#numberToGuess").text("Number to guess: " + call1);
+var counter = 0;
 
 var diamond = minMaxRandom (1,12);
 var sapphire = minMaxRandom (1,12);
 var garnet = minMaxRandom (1,12);
-var amethyst = minMaxRandom (1,12)
+var amethyst = minMaxRandom (1,12);
+
+$(document).ready(function() {
+
+$("#blah").text(totalScore);
+
+$("#numberToGuess").text("Number to guess: " + call1);
+
+$("#win").text("win" + counter);
+
+$("#losses").text("losses" + counter);
+
 // make a counter
-var counter = 0;
+
+
+
+
+// make reset
+function reset() {
+	var diamond = minMaxRandom (1,12);
+	var sapphire = minMaxRandom (1,12);
+	var garnet = minMaxRandom (1,12);
+	var amethyst = minMaxRandom (1,12)
+
+	$("#blah").text(totalScore);
+
+	$("#numberToGuess").text("Number to guess: " + call1);
+
+	minMaxRandom (19,120);
+
+	var counter = 0;
+};
 
 // make buttons count up
 
@@ -87,9 +114,13 @@ $("#amethyst").on("click", function() {
 	// alert("your new score is:" + counter);
 
 	winLoss(totalScore,call1);
+
+});
 	
 
 });
+
+
 
 // make crystals switch values
 

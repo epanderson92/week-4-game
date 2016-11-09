@@ -1,3 +1,23 @@
+body{
+	background: url(../images/TfKJhmg.jpg);
+}				
+
+p{  font-size: 18px;
+	color:#faebd7;
+}
+
+h1{
+	font-size: 75px;
+	color: #faebd7;
+	text-align: center;
+}
+
+#instructions{
+	margin-left: 500px;
+	padding-top: 20px;
+
+}
+
 #diamond{
 	width:100px;
 	height:100px;
@@ -16,4 +36,30 @@
 #amethyst{
 	width :100px;
 	height:100px;
+
+}
+
+#button1{
+	float-bottom:200px;
+}
+
+#win{
+	color:black;
+}
+
+
+#losses{
+	color:black;
+}
+
+#numberToGuess{
+	color: black;
+}
+
+#totalScore{
+	color:black;
+}
+
+#reset{
+	color:black;
 }

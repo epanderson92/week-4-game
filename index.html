@@ -12,15 +12,15 @@
 			<h1>Crystal Collector!</h1>
 		</div>
 
-		<div>
+		<div id="instructions">
 			<p>you will be given a random number at the start of the game.</p>
 			<br><br>
 
-			<p>There are four crystals below. By clicking in a crystal you will add a specific amount of points to your total score.</p>
+			<p>There are four crystals below. By clicking in a crystal you will add<br><br><br> a specific amount of points to your total score.</p>
 			<br><br>
 
-			<p>You win the game by matching your total score to random number, you loose the game if your total score goes above the random number.</p>
-
+			<p>You win the game by matching your total score to random number,<br><br><br> you loose the game if your total score goes above the random number.</p>
+			<br><br>
 			<p>The value of each crystal is hidden from you until you click on it.</p>
 			<br><br>
 
@@ -28,22 +28,26 @@
 
 		</div>
 
-		<div>
-			<p>wins:</p>
-			<p>losses:</p>
-		</div>
-
-
 		<div class="crystal">
-			<button><img id="diamond" class="crystalImage" src="assets/images/tumblr_inline_nnhe8miids1qmdk1o_400.jpg"></button>
+			<button id="button1"><img id="diamond" class="crystalImage" src="assets/images/tumblr_inline_nnhe8miids1qmdk1o_400.jpg"></button>
 			
-			<button><img id="sapphire" class="crystalImage" src="assets/images/ceylon_sapphire_7ct.jpg"></button>
+			<button id="button2"><img id="sapphire" class="crystalImage" src="assets/images/ceylon_sapphire_7ct.jpg"></button>
 			
-			<button><img id="garnet" class="crystalImage" src="assets/images/garnet1.jpg"></button>
+			<button id="button3"><img id="garnet" class="crystalImage" src="assets/images/garnet1.jpg"></button>
 
-			<button><img id="amethyst" class="crystalImage" src="assets/images/Uruguayan-Amethyst-3-new-640x640.jpg"></button>
+			<button id="button4"><img id="amethyst" class="crystalImage" src="assets/images/Uruguayan-Amethyst-3-new-640x640.jpg"></button>
 	
 		</div>
+
+		<div>
+			<p id="win">wins: <span></span></p>
+		</div>
+
+		<span>
+			<p id="losses">losses:</p>
+		</span>
+
+		
 
 
 		<span> 
@@ -59,7 +63,6 @@
 		<div>
 			<p id="totalScore">Total Score: <span id="blah"> </span></p>
 		</div>
-
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	
