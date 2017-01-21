@@ -1,145 +1,132 @@
 // create random  number between 19-120
-function minMaxRandom (min,max){
-	var randomNumber = Math.floor((Math.random () * (max-min + 1) + min));
-	return randomNumber;
+function minMaxRandom(min, max) {
+    var randomNumber = Math.floor((Math.random() * (max - min + 1) + min));
+    return randomNumber;
 }
-var call1 = minMaxRandom (19,120);
+var call1 = minMaxRandom(19, 120);
 
 var totalScore = 0;
 
 var counter = 0;
-
-var diamond = minMaxRandom (1,12);
-var sapphire = minMaxRandom (1,12);
-var garnet = minMaxRandom (1,12);
-var amethyst = minMaxRandom (1,12);
+var wins = 0;
+var losses = 0;
+var diamond = minMaxRandom(1, 12);
+var sapphire = minMaxRandom(1, 12);
+var garnet = minMaxRandom(1, 12);
+var amethyst = minMaxRandom(1, 12);
 
 $(document).ready(function() {
 
-$("#blah").text(totalScore);
+    $("#blah").text(totalScore);
 
-$("#numberToGuess").text("Number to guess: " + call1);
+    $("#numberToGuess").text("Number to guess: " + call1);
 
-$("#win").text("win" + counter);
+    $("#win").text("win" + wins);
 
-$("#losses").text("losses" + counter);
+    $("#losses").text("losses" + losses);
 
-// make a counter
+    // make a counter
+
+    $("#diamond").on("click", function() {
+
+        totalScore += diamond;
+
+
+        $("#blah").text(totalScore);
+
+        // alert("Your new score is:" + counter);
+
+        winLoss(totalScore, call1);
+
+
+    });
 
 
 
+
+    $("#sapphire").on("click", function() {
+
+        totalScore += sapphire;
+
+        $("#blah").text(totalScore);
+
+        // alert("Your new score is:" + counter);
+
+        winLoss(totalScore, call1);
+
+    });
+
+
+
+    $("#garnet").on("click", function() {
+
+        totalScore += garnet;
+
+        $("#blah").text(totalScore);
+
+        // alert("your new score is:" + counter);
+
+        winLoss(totalScore, call1);
+
+
+    });
+
+    $("#amethyst").on("click", function() {
+
+        totalScore += garnet;
+
+        $("#blah").text(totalScore);
+
+        // alert("your new score is:" + counter);
+
+        winLoss(totalScore, call1);
+
+    });
+
+
+});
 
 // make reset
 function reset() {
-	var diamond = minMaxRandom (1,12);
-	var sapphire = minMaxRandom (1,12);
-	var garnet = minMaxRandom (1,12);
-	var amethyst = minMaxRandom (1,12)
+    var diamond = minMaxRandom(1, 12);
+    var sapphire = minMaxRandom(1, 12);
+    var garnet = minMaxRandom(1, 12);
+    var amethyst = minMaxRandom(1, 12)
 
-	$("#blah").text(totalScore);
+    $("#blah").text(totalScore);
 
-	$("#numberToGuess").text("Number to guess: " + call1);
+    $("#numberToGuess").text("Number to guess: " + call1);
 
-	minMaxRandom (19,120);
+    minMaxRandom(19, 120);
 
-	var counter = 0;
+    var counter = 0;
 };
 
 // make buttons count up
 
-function winLoss (counter,call1) {
-	
-	if (counter === call1) {
-		alert("you win!");
+function winLoss(counter, call1) {
 
-	};
+    if (counter === call1) {
+        alert("you win!");
+        wins++;
+        totalScore = 0;
+        $("#win").text("win" + wins);
+    };
 
-	if (counter > call1){
-		 alert("you loose");
+    if (counter > call1) {
+        alert("you loose");
+        losses++;
+        totalScore = 0;
+        $("#losses").text("losses" + losses);
+    };
 
-	};
+
+
 };
-
-
-$("#diamond").on("click", function() {
-
-	totalScore += diamond;
-
-	
-	$("#blah").text(totalScore);
-
-	// alert("Your new score is:" + counter);
-
-	winLoss(totalScore,call1);
-	
-
-});
-
-
- 
-
-$("#sapphire").on("click", function() {
-
-	totalScore += sapphire;
-
-	$("#blah").text(totalScore);
-
-	// alert("Your new score is:" + counter);
-
-	winLoss(totalScore,call1);
-
-});
-
-
-
-$("#garnet").on("click", function() {
-
-	totalScore += garnet;
-
-	$("#blah").text(totalScore);
-
-	// alert("your new score is:" + counter);
-
-	winLoss(totalScore,call1);
-	
-
-});
-
-$("#amethyst").on("click", function() {
-
-	totalScore += garnet;
-
-	$("#blah").text(totalScore);
-
-	// alert("your new score is:" + counter);
-
-	winLoss(totalScore,call1);
-
-});
-	
-
-});
-
 
 
 // make crystals switch values
 
 // make couner say win if match number or you loos 
 // if you go over
-	// alert("Your new score is:" + counter);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// alert("Your new score is:" + counter);
