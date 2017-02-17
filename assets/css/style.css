@@ -1,9 +1,10 @@
 body{
 	background: url(../images/TfKJhmg.jpg);
-}				
+}
 
 p{  font-size: 18px;
-	color:#faebd7;
+		color:#faebd7;
+
 }
 
 h1{
@@ -12,17 +13,31 @@ h1{
 	text-align: center;
 }
 
-#instructions{
-	margin-left: 500px;
-	padding-top: 20px;
+.instructions{
+	/*margin-left: 500px;
+	padding-top: 20px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
 
 }
 
-#diamond{
+.crystal {
+	display: flex;
+	justify-content: space-between;
+}
+
+.score-display {
+	display: flex;
+	justify-content: center;
+}
+
+/*#diamond{
 	width:100px;
 	height:100px;
 }
-	
+
 #sapphire{
 	width :100px;
 	height:100px;
@@ -37,29 +52,9 @@ h1{
 	width :100px;
 	height:100px;
 
-}
+}*/
 
-#button1{
-	float-bottom:200px;
-}
-
-#win{
-	color:black;
-}
-
-
-#losses{
-	color:black;
-}
-
-#numberToGuess{
-	color: black;
-}
-
-#totalScore{
-	color:black;
-}
-
-#reset{
-	color:black;
+.crystalImage {
+	width :100px;
+	height:100px;
 }

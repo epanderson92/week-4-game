@@ -3,16 +3,58 @@
 <head>
   <meta charset='UTF-8'>
   <title>Crystial Game</title>
-  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
+
 </head>
 	<body>
 		<div>
 			<h1>Crystal Collector!</h1>
 		</div>
 
-		<div id="instructions">
+
+    <div class="crystal">
+			<button class="button"><img id="diamond" class="crystalImage" src="assets/images/tumblr_inline_nnhe8miids1qmdk1o_400.jpg"></button>
+
+			<button class="button"><img id="sapphire" class="crystalImage" src="assets/images/ceylon_sapphire_7ct.jpg"></button>
+
+			<button class="button"><img id="garnet" class="crystalImage" src="assets/images/garnet1.jpg"></button>
+
+			<button class="button"><img id="amethyst" class="crystalImage" src="assets/images/Uruguayan-Amethyst-3-new-640x640.jpg"></button>
+
+		</div>
+
+		<div>
+			<p class="score-display" id="win">wins: <span></span></p>
+		</div>
+    <br>
+
+		<span>
+			<p class="score-display" id="losses">losses:</p>
+		</span>
+    <br>
+
+
+
+
+		<span>
+			<p class="score-display" id ="numberToGuess"></p>
+		</span>
+    <br>
+
+
+
+		<!-- <div>
+			<p id="numberToGuess">Your total score is: <span id="blah"> </span></p>
+		</div>-->
+
+		<div>
+			<p class="score-display" id="totalScore">Total Score: <span id="blah"> </span></p>
+		</div>
+
+
+<!--============================ Instruction ============================-->
+    <div class="instructions">
 			<p>you will be given a random number at the start of the game.</p>
 			<br><br>
 
@@ -28,44 +70,8 @@
 
 		</div>
 
-		<div class="crystal">
-			<button id="button1"><img id="diamond" class="crystalImage" src="assets/images/tumblr_inline_nnhe8miids1qmdk1o_400.jpg"></button>
-			
-			<button id="button2"><img id="sapphire" class="crystalImage" src="assets/images/ceylon_sapphire_7ct.jpg"></button>
-			
-			<button id="button3"><img id="garnet" class="crystalImage" src="assets/images/garnet1.jpg"></button>
 
-			<button id="button4"><img id="amethyst" class="crystalImage" src="assets/images/Uruguayan-Amethyst-3-new-640x640.jpg"></button>
-	
-		</div>
-
-		<div>
-			<p id="win">wins: <span></span></p>
-		</div>
-
-		<span>
-			<p id="losses">losses:</p>
-		</span>
-
-		
-
-
-		<span> 
-			<p id ="numberToGuess"></p>
-		</span>
-
-		
-
-		<!-- <div> 
-			<p id="numberToGuess">Your total score is: <span id="blah"> </span></p>
-		</div>-->
-
-		<div>
-			<p id="totalScore">Total Score: <span id="blah"> </span></p>
-		</div>
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 	</body>
