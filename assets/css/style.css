@@ -3,7 +3,7 @@ body{
 }
 
 p{  font-size: 18px;
-		color:#faebd7;
+		color:white;
 
 }
 
@@ -25,7 +25,7 @@ h1{
 
 .crystal {
 	display: flex;
-	justify-content: space-between;
+	justify-content:space-between;
 }
 
 .score-display {
