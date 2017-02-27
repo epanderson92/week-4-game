@@ -2,35 +2,41 @@ body{
 	background: url(../images/TfKJhmg.jpg);
 }
 
-p{  font-size: 18px;
+p{  font-size: 16px;
 		color:white;
+		font-family: sans-serif;
 
 }
 
 h1{
 	font-size: 75px;
-	color: #faebd7;
+	color: white;
 	text-align: center;
 }
 
 .instructions{
-	/*margin-left: 500px;
-	padding-top: 20px;*/
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 50px;
+
 
 
 }
 
 .crystal {
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
+	padding-top: 40px;
+
+
 }
 
 .score-display {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
+	padding-top: 50px;
 }
 
 /*#diamond{
