@@ -1,3 +1,5 @@
+<p><b>CRYSTAL SELECTOR GAME!<b></p>
+
 <p> You will be given a random number at the start of the game.
 
 
